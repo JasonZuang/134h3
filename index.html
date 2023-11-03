@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Your Portfolio</title>
+  <meta name="description" content="Your Portfolio Description">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Jay Zuang</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="links.html">Links</a></li>
+      </ul>
+    </nav>
+    <label for="backcolor">Choose a background color:</label>
+        <input list="backcolor" id="backcolor" name="backcolor">
+        <datalist id="backcolor">
+            <option value="Green">
+            <option value="Tan">
+            <option value="Blue">
+        </datalist>
+  </header>
+  <main>
+    <div class = "content-container">
+      <div class = "intro">
+        <h2>Welcome to My Site</h2>
+        <p>I'm Jay, a passionate student at UCSD (University of California, San Diego) with a deep love for computer science. My journey in the world of CS has been an exhilarating adventure. From coding projects that defy gravity to creating software that simplifies everyday life, I'm constantly driven by the endless possibilities of technology.</p>
+        <svg width="100" height="100">
+          <circle cx="50" cy="50" r="40" fill="yellow" /> 
+          <circle cx="35" cy="40" r="5" fill="black" /> 
+          <circle cx="65" cy="40" r="5" fill="black" /> 
+          <path d="M50 60 Q 45 75, 50 80 Q 55 75, 50 60" fill="none" stroke="black" stroke-width="3" /> 
+        </svg>
+      </div>
+      
+      <div class = projects>
+        <section class="featured-projects">
+          <h3>Featured Projects</h3>
+            <div class="project">
+              <img src="project1.png" alt="Sausage Stealer" width="200" height="200">
+              <figcaption>
+                <h4>Sausage Stealer</h4>
+                <p>"Sausage Stealer" is a whimsical video game where players control a daring sausage that holds a sausage store hostage, blending humor and suspense in a culinary-themed adventure. Gamers navigate through comical interactions, tackling puzzles and challenges as they follow the sausage's journey of culinary capers and unexpected bonds.</p>
+                <iframe width="560" class="youtube-video" height="315" src="https://www.youtube.com/embed/AmTNW2DOf4Q?si=qGEBDtTA1z7UvNBs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </figcaption>
+            </div>
+            <div class="project">
+              <img src="project2.png" alt="Innis.com" width="200" height="200">
+              <figcaption>
+                <h4>Innis.com</h4>
+                <p>Innis.com is a captivating digital realm, an enchanting fusion of art, science, and imagination, where users embark on a virtual odyssey through surreal landscapes, uncovering hidden wonders and unraveling mysteries in a world beyond the ordinary.</p>
+              </figcaption>
+            </div>
+        </section>
+        <section>
+          <h3>My Favorite Song</h3>
+          <audio controls>
+            <source src="music.mp3" type="audio/mpeg">
+            <summary>This is my favorite song and I want to show it off.</summary>
+          </audio>
+        </section>
+      </div>
+      
+      <section>
+        <h3>Leave a Picture</h3>
+        <canvas id="myCanvas" width="400" height="400"></canvas>
+        <script>
+        </script>
+      </section>
+    </div>
+    
+  </main>
+  <footer>
+    <p>&copy; 2023 Jay's Portfolio</p>
+  </footer>
+</body>
+</html>
