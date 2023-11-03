@@ -1,13 +1,15 @@
 :root {
     --primary-color: #3498db;
     --secondary-color: #e74c3c;
-    --font-family: 'Open Sans', Arial, sans-serif;
+    --font-family: 'CustomFont', Arial, sans-serif;
     --font-size: 16px;
   }
   
   @font-face {
-    font-family: 'Open Sans';
-    src: url('open-sans.woff2') format('woff2');
+    font-family: 'CustomFont';
+    src: url('fonts/Agbalumo-Regular.ttf') format('truetype');;
+    font-weight: normal;
+    font-style: normal;
   }
   
   body {
@@ -28,18 +30,31 @@
     color: #fff; 
     padding: 20px;
   }
-  nav{
+  nav {
+
     text-align: center;
-    background-color: var(--primary-color);
   }
+  
   nav ul {
     list-style: none;
-    padding: 0;
+    margin: 100;
   }
   
   nav li {
-    display: inline; 
-    margin: 0 10px; 
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ff6600;
   }
   
   .content-container {
@@ -81,9 +96,10 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 50vh;
+    height: 30vh;
     border: 2px solid #3498db;
-  padding: 20px;
+    padding: 2px;
+    background-color: #f2f2f2;
   }
 
   .intro h2{
@@ -125,6 +141,65 @@
     transform: scale(1.05);
   }
 
+  projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .featured-projects {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+  }
+  
+  .project {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+ 
+  .project figcaption {
+    margin-top: 15px;
+  }
+  
+  .project h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .project p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.4;
+  }
+  
+  .project iframe.youtube-video {
+    max-width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .projects {
+      flex-direction: column;
+    }
+    .project {
+      width: 100%;
+    }
+  }
+  
   .contact-main {
     background-color: #f5f5f5;
     padding: 20px;
