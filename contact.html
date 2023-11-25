@@ -57,8 +57,9 @@
       if (savedTheme === 'night') {
         applyNightMode();
       }
-      if(savedTheme === null){
+      else{
         savedTheme = 'day';
+        applyDayMode();
       }
       var toggleButton = document.getElementById('toggleButton');
       console.log(savedTheme);
