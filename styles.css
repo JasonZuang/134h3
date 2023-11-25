@@ -3,6 +3,8 @@
     --secondary-color: #e74c3c;
     --font-family: 'CustomFont', Arial, sans-serif;
     --font-size: 16px;
+    --contactday:#f5f5f5;
+    --contactnigh:#5f5f5f;
   }
   
   @font-face {
@@ -17,7 +19,7 @@
     font-size: var(--font-size);
     margin: 0;
     padding: 0;
-    background-color: var(--backcolor, #fff); 
+    background-color: var(--backcolor); 
     transition: background-color 0.3s ease-in-out;
   }
   
@@ -201,7 +203,7 @@
   }
   
   .contact-main {
-    background-color: #f5f5f5;
+    background-color: var(--contactday);
     padding: 20px;
     margin: 20px;
     border-radius: 5px;
@@ -259,7 +261,7 @@
     background-color: #0078d4;
   }
   .contact-aside {
-    background-color: #f5f5f5;
+    background-color: var(--contactday);
     padding: 20px;
     margin: 20px;
     border-radius: 5px;
@@ -379,4 +381,14 @@
     text-decoration: underline;
   }
 
-  
+  #errorOutput {
+    color: red;
+    display: none;
+    margin-top: 10px;
+  }
+
+  .error-message {
+    color: red;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+  }
