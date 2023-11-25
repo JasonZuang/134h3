@@ -57,6 +57,9 @@
       if (savedTheme === 'night') {
         applyNightMode();
       }
+      if(savedTheme === null){
+        savedTheme = 'day';
+      }
       var toggleButton = document.getElementById('toggleButton');
       console.log(savedTheme);
       var form_errors = [];
